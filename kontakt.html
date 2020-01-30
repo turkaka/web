@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="da">
+<head>
+    <title>Kasim Kara</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+      <link rel="shortcut icon" href="images/forside.jpg" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CLibre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css"  href='style.css' />
+
+</head>
+
+
+<body>
+
+    <!-- Left Sidebar -->
+    <div  id="myDropdown" class="menu-left-part">
+
+        <div class="site-info-holder">
+          <a href="index.html">
+                <img src="images/kasim-logo.png" alt="kasim kara">
+            </a>
+            <p class="site-description">
+              Jeg er en frisk, aktiv og åben person, der har lyst til at gøre en forskel – hvor jeg er.
+            </p>
+        </div>
+        <nav id="header-main-menu">
+            <ul class="main-menu sm sm-clean">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="ommig.html">Om mig</a></li>
+                <li><a href="uddannelse.html">Uddannelse</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html" class="current">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            <div class="footer-info">
+                © 2019 Kasim Kara <br> design BY <a href="https://kasim.dk">Kasim Kara</a>.
+            </div>
+        </footer>
+    </div>
+
+    <div  id="sidebar" class="sidebar">
+      <div class="menu-right-part">
+          <div class="logo-holder">
+              <a href="index.html">
+                  <img src="images/kasim-logo.png" alt="kasim kara">
+              </a>
+          </div>
+          <div class="toggle-holder">
+              <div onclick="myFunction()"  id="toggle"  class="menu-line">
+                <div class="menu-line"></div>
+
+              </div>
+          </div>
+          <div class="social-holder">
+              <div class="social-list">
+                  <a href="https://www.facebook.com/kasimkara"><img src="images/facebook.png" width="50" alt="Facebook logo"/></a>
+                  <a href="https://www.instagram.com/turkaka33/"><img src="images/instagram.png" width="50" alt="instagram logo"/></a>
+                  <a href="https://www.linkedin.com/in/kasim-kara-a261a845/"><img src="images/linkedin.png" width="50" alt="linkedin logo"/></a>
+                  <a href="https://www.youtube.com/channel/UC9SnWwt2llD2QvLWgfwkV1Q"><img src="images/youtube.png" width="50" alt="youtube logo"/></a>
+                  <a href="https://www.moonstar.dk"><img src="images/website.png" width="50" alt="Mit Firma hjemmeside" /></a>
+                </div>
+          </div>
+
+      </div>
+
+
+
+        <div class="clear"></div>
+    </div>
+
+
+        <!-- Contact Content -->
+        <div class="site-content">
+
+          <div class="featured-image-holder">
+              <div id="kontakt-image" ></div>
+          </div>
+          <div class="clear"></div>
+                <div class="kontakt">
+
+                        <h1 class="entry-title">Kontakt mig</h1>
+                        <div class="one_half ">
+                          Jeg er en frisk, aktiv og åben person, der har lyst til at gøre en forskel <p></p>
+                            <br>
+                            <p>Hvis du har spørgmål om mig eller har du brug for hjælp til digital media eller
+                              til at designe en hjemmeside, kan du godt kontakt mig via mail, telefon.
+                              Vi kan også mødes et sted hvor vi kan nyde en kop kaffe og snakke der.
+                             </p>
+                            <br>
+                            <div class="montserrat">
+                                <span style="color: #adadad;">Email:</span>&nbsp;info@moonstar.dk<br>
+                                <span style="color: #adadad;">Telefon:</span> +45 52529040<br>
+
+                                  </div>
+                        </div>
+                        <div class="one_half last ">
+                            <div class="contact-form">
+                                <p><input id="name" type="text" name="your-name" placeholder="Dit Navn"></p>
+                                <p><input id="contact-email" type="email" name="your-email" placeholder="Din Email"></p>
+                                <p><input id="subject" type="text" name="your-subject" placeholder="Emne"></p>
+                                <p><textarea id="message" name="your-message" placeholder="Besked"></textarea></p>
+                                <p><input type="submit" value="SENDE"></p>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+        </div>
+
+
+
+        <!--Load JavaScript-->
+        <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.menu-line')) {
+            var dropdowns = document.getElementsByClassName("menu-left-part");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+    </body>
+</html>

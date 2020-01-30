@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="da">
+<head>
+    <title>Kasim Kara</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+      <link rel="shortcut icon" href="images/forside.jpg" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CLibre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css"  href='style.css' />
+
+</head>
+
+
+<body>
+
+    <!-- Left Sidebar -->
+    <div  id="myDropdown" class="menu-left-part">
+
+        <div class="site-info-holder">
+          <a href="index.html">
+                <img src="images/kasim-logo.png" alt="kasim kara">
+            </a>
+            <p class="site-description">
+              Jeg er en frisk, aktiv og åben person, der har lyst til at gøre en forskel – hvor jeg er.
+            </p>
+        </div>
+        <nav id="header-main-menu">
+            <ul class="main-menu sm sm-clean">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="ommig.html">Om mig</a></li>
+                <li><a href="uddannelse.html">Uddannelse</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            <div class="footer-info">
+                © 2019 Kasim Kara <br> design BY <a href="https://kasim.dk">Kasim Kara</a>.
+            </div>
+        </footer>
+    </div>
+
+    <div  id="sidebar" class="sidebar">
+      <div class="menu-right-part">
+          <div class="logo-holder">
+              <a href="index.html">
+                  <img src="images/kasim-logo.png" alt="kasim kara">
+              </a>
+          </div>
+          <div class="toggle-holder">
+              <div onclick="myFunction()"  id="toggle"  class="menu-line">
+                <div class="menu-line"></div>
+
+              </div>
+          </div>
+          <div class="social-holder">
+              <div class="social-list">
+                  <a href="https://www.facebook.com/kasimkara"><img src="images/facebook.png" width="50" alt="Facebook logo"/></a>
+                  <a href="https://www.instagram.com/turkaka33/"><img src="images/instagram.png" width="50" alt="instagram logo"/></a>
+                  <a href="https://www.linkedin.com/in/kasim-kara-a261a845/"><img src="images/linkedin.png" width="50" alt="linkedin logo"/></a>
+                  <a href="https://www.youtube.com/channel/UC9SnWwt2llD2QvLWgfwkV1Q"><img src="images/youtube.png" width="50" alt="youtube logo"/></a>
+                  <a href="https://www.moonstar.dk"><img src="images/website.png" width="50" alt="Mit Firma hjemmeside" /></a>
+                </div>
+          </div>
+
+      </div>
+
+
+
+        <div class="clear"></div>
+    </div>
+
+
+        <!-- Single Content -->
+        <div class="site-content">
+
+          <div class="featured-image-holder">
+              <div id="featured-post-image" ></div>
+          </div>
+            <div class="multimedia">
+
+                    <div class="entry-content">
+
+
+                        <div class="content-wrap">
+                            <p>Jeg har erfaring med html, css og WordPress cms.
+                              Da jeg startede på multimediedesigner uddannelsen,
+                              var jeg i tvivl om multimedia uddannelsen var noget for mig.
+                              Men efter første semester har jeg en god fornemmelse om at
+                              denne uddannelse vil give mig mere forståelse for digital media og
+                              jeg hjælpe mig med at blive dygtigere til at designe. </p>
+
+                            <blockquote class="inline-blockquote">
+                                <p>Det er ikke kun mig, der er mange i klasse som har været i tvivl om
+                                  uddannelsens indhold. Vores forventninger var at vi ville bruge mere design og
+                                  digitale værktøjer. Men det er godt at vi bruger metoder, analyse og skriver.</p>
+
+                            </blockquote>
+                            <p >Jeg er gift og har 2 børn, jeg arbejder som selvstændig og
+                              er aktiv i forskellige foreninger. Men jeg prøver at
+                              koncentrere mig om at få en god uddannelse i multimedia.</p>
+                            <br>
+                            <div id="imgbox">
+
+                            <img src="images/moon1.png" alt="" width="100%">
+                          </div>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+
+
+        <!--Load JavaScript-->
+
+        <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.menu-line')) {
+            var dropdowns = document.getElementsByClassName("menu-left-part");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+</body>
+</html>
