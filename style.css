@@ -1,10 +1,10 @@
 html
-{
+    {
     overflow: auto;
-}
+    }
 
 body
-{
+    {
     font-family: 'Libre Baskerville',sans-serif, Arial;;
     font-size: 18px;
     line-height: 35px;
@@ -12,12 +12,12 @@ body
     letter-spacing: -1px;
     color: #404040;
     background-color: #fff;
-}
+    }
 
 .clear
-{
+    {
     clear: both;
-}
+    }
 
 
 body a
